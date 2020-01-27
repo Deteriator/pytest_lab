@@ -1,18 +1,17 @@
-def fizzbuzz(num = 100):
-    count = 0
-    while count <= num:
-        if count % 15 == 0:
-            return "fizzbuzz"
+def fizzbuzz(num):
+    if num == 0:
+        return 0
+    elif num % 15 == 0:
+        return "fizzbuzz"
         
-        elif count % 3 == 0: 
-            return "fizz"
+    elif num % 3 == 0: 
+        return "fizz"
         
-        elif count % 5 == 0:
-            return "buzz"
+    elif num % 5 == 0:
+        return "buzz"
         
-        else:
-            return count
+    else:
+        return num
         
-        count += 1
 
-print(fizzbuzz(3))
+print(fizzbuzz(10))

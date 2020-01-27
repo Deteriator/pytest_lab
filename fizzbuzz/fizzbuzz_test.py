@@ -1,6 +1,6 @@
-import fizzbuzz
+from  fizzbuzz import fizzbuzz
 
-def test_fizzbuzz(num):
+def test_fizzbuzz():
 	assert fizzbuzz(10) == "buzz"
 	assert fizzbuzz(3) == "fizz"
 	assert fizzbuzz(15) == "fizzbuzz"
